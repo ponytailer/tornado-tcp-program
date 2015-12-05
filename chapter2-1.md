@@ -2,8 +2,6 @@
 ## 2.1  ioloop开启时的基本函数
 
 
-
-
 ##### 1.IOLoop.current(instance=True)
 
 如果当前的ioloop已经运行了，那么这个函数就是用来获得当前线程里的IOLoop对象。
