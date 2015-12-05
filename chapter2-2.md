@@ -19,3 +19,6 @@
 ##### 6.IOLoop.call_later(delay, callback, *args, **kwargs)
 这个函数和上面的差不多，这是在ioloop启动后的delay秒后，去执行callback。上面的是一个时间点，而这个函数是多少秒。
 ```ioloop.IOLoop.current().call_later(3, func)```这就是在ioloop启动的3s以后来执行func函数。
+
+##### 7.IOLoop.remove_timeout(timeout)
+这个函数就是用来移除上面通过add_timeout注册的callback函数。
