@@ -25,3 +25,4 @@ if __name__ == '__main__':
 注册一个handler，从fd那里接受事件。
 fd呢就是一个描述符，events就是要监听的事件。
 events有这样几种类型，IOLoop.READ, IOLoop.WRITE, 还有IOLoop.ERROR.
+很好理解，读写事件，还有错误异常。
