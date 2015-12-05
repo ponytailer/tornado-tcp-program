@@ -1,5 +1,5 @@
 
-## 2.1  ioloop开启时的基本函数
+## 2.1  ioloop的基本函数
 
 
 ##### 1.IOLoop.current(instance=True)
