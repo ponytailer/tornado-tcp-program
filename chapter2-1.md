@@ -37,4 +37,5 @@ events有这样几种类型，IOLoop.READ, IOLoop.WRITE, 还有IOLoop.ERROR.
 停止监听fd上面的所有事件。
 
 
+
 以上就是在ioloop开启的时候，涉及到的主要函数及其作用的介绍。
