@@ -31,3 +31,6 @@ if __name__ == '__main__':
 ```
 
 这是官方文档给出的一段简单的tcpserver的代码，那么我们就从它来分析一下。
+首先是socket的部分，创建了一个socket，然后下面是ioloop的部分。首先我们创建一个ioloop实例, 然后创建了一个回调函数, （partial这个函数不用太关心，就是一种绑定参数的函数写法。）然后给ioloop加上一个handler，用于监听socket，最后开启ioloop。当ioloop开启以后，就会去执行回调函数connecction_ready。
+
+以上就是创建一个simpleTCPServer的步骤，接下来我们主要围绕ioloop来说一下与它相关的函数方法。
