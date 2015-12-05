@@ -25,3 +25,6 @@
 
 ##### 8.IOLoop.spawn_callback(callback, *args, **kwargs)
 这个函数也是去执行一个回调函数，但是和上面说过的其他callback不同，它和回调者的栈上下文没有关联，因此呢，他比较时候去做一些独立的功能回调。
+
+##### 9.IOLoop.time()
+它返回的时候ioloop开启后的时间，返回的值跟time.time差不多。
