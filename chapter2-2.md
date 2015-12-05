@@ -9,3 +9,12 @@
 
 ##### 3.IOLoop.add_future(future, callback)
 这个函数呢也是添加一个callback函数，当给定的这个future执行完的时候，callback会去执行，这个函数有唯一的一个参数就是这个future对象。关于future呢，后面会详细去讲。
+
+##### 4.IOLoop.add_timeout(deadline, callback, *args, **kwargs)
+执行callback函数在deadline的时候，这个deadline可以是time.time，也可以是datetime.timedelta。还有，这个函数线程不安全。
+
+##### 5.IOLoop.call_at(when, callback, *args, **kwargs)
+这个函数我们用的就很多了，在ioloop启动后，会在when这个时间点去执行callback函数。类似一个定时器的功能。
+
+##### 6.IOLoop.call_later(delay, callback, *args, **kwargs)
+这个函数和上面的差不多，这是在ioloop启动后的delay秒后，去执行callback。上面的是一个时间点，而这个函数是多少秒。
