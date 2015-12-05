@@ -26,3 +26,13 @@ if __name__ == '__main__':
 fd呢就是一个描述符，events就是要监听的事件。
 events有这样几种类型，IOLoop.READ, IOLoop.WRITE, 还有IOLoop.ERROR.
 很好理解，读写事件，还有错误异常。
+
+当我们选定的类型事件发生的时候，那么就会执行handler(fd, events)。
+
+
+##### 6.update_handler(fd, events)
+用来更新上面我们注册的handler的。
+
+##### 7.remove_handler(fd)
+停止监听fd上面的所有事件。
+
