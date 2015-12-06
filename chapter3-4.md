@@ -63,8 +63,9 @@ class TcpServer(object):
         conn.read_util_close(handle_receive)
     ```
     
-    我们来看一下流程，
-    1.start().我们开启tcpserver，首先创建一个socket，, 然后我们为ioloop添加handler。
-    2.服务器开启后，执行_accept_handler,这个函数里是一个循环，从socket中获取conn
-    3.然后我们解析这个conn， build_class使我们自己实现的一个用来解析数据，拆包解包的一个protocol类，这里我们会将所有的bytes解析为我们能看懂的字符串数字等等。
-    4.然后我们调用on_connect函数，我们将这个conn传入handler_stream中， 前面讲过，这个函数是用来接受的stream的。然后我们从stream中读取数据，知道conn关闭。
+我们来看一下流程，
+1.start().我们开启tcpserver，首先创建一个socket，, 然后我们为ioloop添加handler。
+    
+2.服务器开启后，执行_accept_handler,这个函数里是一个循环，从socket中获取conn
+3.然后我们解析这个conn， build_class使我们自己实现的一个用来解析数据，拆包解包的一个protocol类，这里我们会将所有的bytes解析为我们能看懂的字符串数字等等。
+4.然后我们调用on_connect函数，我们将这个conn传入handler_stream中， 前面讲过，这个函数是用来接受的stream的。然后我们从stream中读取数据，知道conn关闭。
