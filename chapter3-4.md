@@ -16,7 +16,8 @@ class TcpServer(object):
                 if errno_from_exception(e) not in _ERRNO_WOULDBLOCK:
                     raise
                 return
-
+            
+            #通过conn解析
             self._handle_connect(connection)
 
     def _handle_connect(self, sock):
