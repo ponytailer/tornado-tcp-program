@@ -34,3 +34,10 @@ server.start(0)  # Forks multiple sub-processes
 IOLoop.current().start()
 ```
 
+
+##### 3.add_sockets
+sockets = bind_sockets(8888)
+tornado.process.fork_processes(0)
+server = TCPServer()
+server.add_sockets(sockets)
+IOLoop.current().start()
