@@ -24,6 +24,7 @@ class TcpServer(object):
         self.on_connect(conn)
 
         close_callback = functools.partial(self.on_close, conn)
+        #设置一个conn关闭时执行的回调函数
         conn.set_close_callback(close_callback)
 
     def startFactory(self):
