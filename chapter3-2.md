@@ -46,7 +46,7 @@ if __name__ == '__main__':
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0)
     #创建一个stream
     stream = tornado.iostream.IOStream(s)
-    #连接目标
+    #连接目标，执行回调函数
     stream.connect(("friendfeed.com", 80), send_request)
     tornado.ioloop.IOLoop.current().start()
 ```
