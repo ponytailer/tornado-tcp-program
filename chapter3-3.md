@@ -17,4 +17,7 @@
 
 来看一下关于它的几个函数
 
-##### 1.
+##### 1.listen(port, address="")
+server = TCPServer()
+server.listen(8888)
+IOLoop.current().start()
