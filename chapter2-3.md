@@ -1,4 +1,4 @@
-## 2.3 ioloop基础函数相关说明
+## 2.3 ioloop相关函数说明
 
 1.add_handler, update_handler, remove_handler三个和handelr有关的函数，通常是在写connection的时候用到的，刚开始学习的时候，不用太在意它的用法，在后面会详细说明。
 
