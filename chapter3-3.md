@@ -35,7 +35,7 @@ IOLoop.current().start()
 ```
 
 
-##### 3.add_sockets
+##### 3.add_sockets(sockets)
 sockets = bind_sockets(8888)
 tornado.process.fork_processes(0)
 server = TCPServer()
