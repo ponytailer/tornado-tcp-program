@@ -6,7 +6,7 @@
 以下是它的几个基本属性：
 ```
 io_loop – 当前的ioloop实例。
-max_buffer_size – Maximum amount of incoming data to buffer; defaults to 100MB.
+max_buffer_size – 最大的数据大小，默认是100M。
 read_chunk_size – Amount of data to read at one time from the underlying transport; defaults to 64KB.
 max_write_buffer_size – Amount of outgoing data to buffer; defaults to unlimited.
 ```
