@@ -11,3 +11,5 @@
 
 ##### 4.BaseIOStream.read_from_fd(data)
 有写也有读。
+
+##### 5.BaseIOStream.get_fd_error()
