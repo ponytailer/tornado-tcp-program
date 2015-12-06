@@ -43,3 +43,6 @@ tornado.process.fork_processes(0)
 server = TCPServer()
 server.add_sockets(sockets)
 IOLoop.current().start()```
+
+##### 4.handle_stream(stream, address)
+这是我们用来接收stream的方法。
