@@ -24,3 +24,9 @@ server.listen(8888)
 IOLoop.current().start()```
 
 这就可以创建一个简单的tcpserver，端口号8888
+
+2.bind(port, address=None, family=<AddressFamily.AF_UNSPEC: 0>, backlog=128)
+server = TCPServer()
+server.bind(8888)
+server.start(0)  # Forks multiple sub-processes
+IOLoop.current().start()
