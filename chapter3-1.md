@@ -41,3 +41,7 @@ max_write_buffer_size – 最大的写buffer大小。
 ##### 8.BaseIOStream.closed()
 如果为真，那么说明stream已经关闭了。
 
+##### 9.BaseIOStream.reading()
+如果为真，那么说明当前正在从stream中读数据
+
+
