@@ -10,6 +10,7 @@ class TcpServer(object):
     def _accept_handler(self, sock, fd, events):
         while True:
             try:
+                获得conn
                 connection, address = sock.accept()
             except socket.error, e:
                 if errno_from_exception(e) not in _ERRNO_WOULDBLOCK:
