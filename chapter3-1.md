@@ -22,3 +22,4 @@ max_write_buffer_size – 最大的写buffer大小。
 
 异步的读取数据，读到的数据大小取决于num_bytes。同理，如果有callback，在数据完全读取后，执行callback。读取到的数据data作为callback的参数，如果不是的话，那么callback需要返回一个future对象。而streaming_callback,是当读取到的数据全都是有效的情况下，才会去执行。
 
+##### 3.BaseIOStream.read_until(delimiter, callback=None, max_bytes=None)
