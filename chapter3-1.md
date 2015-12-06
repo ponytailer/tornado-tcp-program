@@ -2,7 +2,8 @@
 
 简单的来说，这个类从socket中读或写数据。
 
-	
+
+以下是它的几个基本属性：
 ```
 io_loop – The IOLoop to use; defaults to IOLoop.current. Deprecated since Tornado 4.1.
 max_buffer_size – Maximum amount of incoming data to buffer; defaults to 100MB.
