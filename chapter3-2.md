@@ -1,4 +1,4 @@
-## 3.2 baseIOStream的相关函数
+## 3.2 baseIOStream的相关函数以及IOStream类
 
 ###### 1.BaseIOStream.fileno()
 这个很简单，就是我们stream当前的文件描述符。
@@ -14,3 +14,6 @@
 
 ##### 5.BaseIOStream.get_fd_error()
 获取fd中所有error信息。
+
+
+关于baseIOStream的信息差不都就这些了，在我们实际使用的过程中，我们不会去直接使用这个类的，我们基本都会去使用它的子类，IOStream。
