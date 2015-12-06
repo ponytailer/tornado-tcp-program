@@ -19,6 +19,7 @@ class TcpServer(object):
             self._handle_connect(connection)
 
     def _handle_connect(self, sock):
+        #这里的conn主要是我们来解析数据的protocol
         conn = self._build_class(sock, **self._build_kwargs)
         self.on_connect(conn)
 
