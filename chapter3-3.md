@@ -21,7 +21,8 @@
 ```
 server = TCPServer()
 server.listen(8888)
-IOLoop.current().start()```
+IOLoop.current().start()
+```
 
 这就可以创建一个简单的tcpserver，端口号8888
 
@@ -42,7 +43,9 @@ sockets = bind_sockets(8888)
 tornado.process.fork_processes(0)
 server = TCPServer()
 server.add_sockets(sockets)
-IOLoop.current().start()```
+IOLoop.current().start()
+```
 
 ##### 4.handle_stream(stream, address)
 这是我们用来接收stream的方法。你可以通过继承TCPServer，来覆盖这个方法。
+
