@@ -37,3 +37,7 @@ max_write_buffer_size – 最大的写buffer大小。
 
 ##### 7.BaseIOStream.set_close_callback(callback)
 当stream关闭时，执行回调函数。
+
+##### 8.BaseIOStream.closed()
+如果为真，那么说明stream已经关闭了。
+
