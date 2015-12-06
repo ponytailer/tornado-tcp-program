@@ -9,3 +9,6 @@ io_loop.add_callback(load_rank_list)
 io_loop.start()
 ```
 其中load_rank_list就是去将排行榜信息load到内存中的相关操作。
+
+
+3.call_later和call_at也是我们在开发过程中常用的函数之一。它们给我们在做相关定时的操作的时候带来了便利。
