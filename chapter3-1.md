@@ -8,5 +8,5 @@
 io_loop – 当前的ioloop实例。
 max_buffer_size – 最大的可接受数据大小，默认是100M。
 read_chunk_size – 读取的数据大小，默认64k。
-max_write_buffer_size – Amount of outgoing data to buffer; defaults to unlimited.
+max_write_buffer_size – 最大的写buffer大小。
 ```
