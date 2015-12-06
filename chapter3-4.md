@@ -37,9 +37,9 @@ class TcpServer(object):
         io_loop = ioloop.IOLoop.instance()
         for sock in socks:
             callback = functools.partial(self._accept_handler, sock)
-            为ioloop添加handler
+            #为ioloop添加handler
             io_loop.add_handler(sock.fileno(), callback, WRITE_EVENT | READ_EVENT | ERROR_EVENT)
-
+        #在ioloop开启后，添加一个回调函数
         ioloop.IOLoop.current().add_callback(self.startFactory)
 
     def handle_stream(self, conn, buff):
