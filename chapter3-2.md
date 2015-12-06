@@ -8,3 +8,6 @@
 
 ##### 3.BaseIOStream.write_to_fd(data)
 尝试向这个fd去写data， 期间可能会出现未成功写入，因此函数的返回值是成功写入数据的大小。
+
+##### 4.BaseIOStream.read_from_fd(data)
+有写也有读。
