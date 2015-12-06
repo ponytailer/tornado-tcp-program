@@ -64,4 +64,4 @@ class TcpServer(object):
     ```
     
     我们来看一下流程，
-    1.start().我们开启tcpserver，首先创建一个socket，, 然后我们Wieioloop添加
+    1.start().我们开启tcpserver，首先创建一个socket，, 然后我们为ioloop添加
