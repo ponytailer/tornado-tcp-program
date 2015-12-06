@@ -30,3 +30,4 @@ max_write_buffer_size – 最大的写buffer大小。
 通过正则来读取数据，regex就是给定的正则表达式。
 
 ##### 5.BaseIOStream.read_until_close(callback=None, streaming_callback=None)
+一直读数据，知道socket关闭。
