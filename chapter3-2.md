@@ -4,4 +4,7 @@
 这个很简单，就是我们stream当前的文件描述符。
 
 ##### 2.BaseIOStream.close_fd()
-关闭这个fileno
+关闭这个fd。
+
+##### 3.BaseIOStream.write_to_fd(data)
+尝试向这个fd去写data， 期间可能会出现未成功写入，因此函数的返回值是成功写入数据的大小。
