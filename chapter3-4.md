@@ -15,8 +15,6 @@ class TcpServer(object):
                 获得conn
                 connection, address = sock.accept()
             except socket.error, e:
-                if errno_from_exception(e) not in _ERRNO_WOULDBLOCK:
-                    raise
                 return
             
             #通过conn解析
