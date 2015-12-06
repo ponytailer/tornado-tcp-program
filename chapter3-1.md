@@ -25,3 +25,5 @@ max_write_buffer_size – 最大的写buffer大小。
 ##### 3.BaseIOStream.read_until(delimiter, callback=None, max_bytes=None)
 
 同上，只不过是当读delimiter(分隔符)的时候停止。callback和read_bytes里的一样。
+
+##### 4.BaseIOStream.read_until_regex(regex, callback=None, max_bytes=None)
