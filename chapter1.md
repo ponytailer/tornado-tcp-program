@@ -1,4 +1,4 @@
-# 什么是tornado?
+# what's the tornado?
 
 Tornado 和现在的主流 Web 服务器框架（包括大多数 Python 的框架）有着明显的区别：它是非阻塞式服务器，而且速度相当快。得利于其 非阻塞的方式和对 epoll 的运用，Tornado每秒可以处理数以千计的连接，因此 Tornado 是实时 Web 服务的一个理想框架。
 
