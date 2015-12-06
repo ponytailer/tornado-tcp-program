@@ -1,7 +1,7 @@
 
 ## 2.2 ioloop的回调函数
 
-###### 1.IOLoop.add_callback(callback, *args, **kwargs)
+##### 1.IOLoop.add_callback(callback, *args, **kwargs)
 这个函数是最简单的，在ioloop开启后执行的回调函数callback，*args和**kwargs都是这个回调函数的参数。一般我们的server都是单进程单线程的，即使是多线程，那么这个函数也是安全的。
 
 ##### 2.IOLoop.add_callback_from_signal(callback, *args, **kwargs)
