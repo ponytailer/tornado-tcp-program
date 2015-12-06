@@ -44,4 +44,5 @@ max_write_buffer_size – 最大的写buffer大小。
 ##### 9.BaseIOStream.reading()
 如果为真，那么说明当前正在从stream中读数据
 
-
+##### 10.BaseIOStream.writing()
+有读就有写。
