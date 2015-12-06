@@ -64,4 +64,5 @@ class TcpServer(object):
     ```
     
     我们来看一下流程，
-    1.start().我们开启tcpserver，首先创建一个socket，, 然后我们为ioloop添加handler
+    1.start().我们开启tcpserver，首先创建一个socket，, 然后我们为ioloop添加handler。
+    2.服务器开启后，执行_accept_handler,这个函数里是一个循环，从socket中获取conn
