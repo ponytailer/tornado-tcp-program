@@ -57,4 +57,5 @@ class TcpServer(object):
         logger.debug('on_connect: %s' % repr(conn.getaddress()))
 
         handle_receive = functools.partial(self.handle_stream, conn)
-        conn.read_util_close(handle_receive)```
+        conn.read_util_close(handle_receive)
+    ```
