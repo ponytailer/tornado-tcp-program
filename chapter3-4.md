@@ -1,6 +1,6 @@
 ##3.4 一个简单的TCPServer
 
-以下是一个简单的TCPServer的代码。
+以下是一个简单的TCPServer的代码(鸣谢yoki123)。
 
 ```
 class TcpServer(object):
