@@ -1,4 +1,4 @@
-## 3.1BaseIOStream
+## 3.1BaseIOStream的相关接口
 
 简单的来说，这个类从socket中读或写数据。
 
