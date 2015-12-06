@@ -1,5 +1,7 @@
 ##3.4 一个简单的TCPServer
 
+以下是一个简单的TCPServer的代码。
+
 ```
 class TcpServer(object):
     def __init__(self, address, build_class, **build_kwargs):
