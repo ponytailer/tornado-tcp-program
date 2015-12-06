@@ -41,7 +41,8 @@ class TcpServer(object):
             io_loop.add_handler(sock.fileno(), callback, WRITE_EVENT | READ_EVENT | ERROR_EVENT)
         #在ioloop开启后，添加一个回调函数
         ioloop.IOLoop.current().add_callback(self.startFactory)
-
+    
+    #接受buff的函数，继承tcpserver的时候可以重写。
     def handle_stream(self, conn, buff):
         logger.debug('handle_stream')
 
