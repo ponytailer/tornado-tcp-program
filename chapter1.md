@@ -4,7 +4,7 @@ Tornado 和现在的主流 Web 服务器框架（包括大多数 Python 的框�
 
 但其实tornado也非常适合写tcp服务器,在twisted和tornado的性能对比中可以发现，tornado的性能远大于twisted，尤其是在pypy的环境下。因此，本书主要来讲解如何使用tornado来进行tcp的开发。
 
-本书的读者为具有一定python基础，且使用过或想去使用tornado的读者。
+本书的读者为具有一定python基础，使用过或想去使用tornado的读者。
 
 本书实验环境为tornado4.3/4.4， python版本为py2.7/pypy4.0.
 
