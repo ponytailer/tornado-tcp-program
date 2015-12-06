@@ -6,7 +6,6 @@ Tornado 和现在的主流 Web 服务器框架（包括大多数 Python 的框�
 
 本书的读者为具有一定python基础，且使用过tornado的读者。
 
-
 本书实验环境为tornado4.3/4.4， python版本为py2.7/pypy4.0.
 
 本书主要参考tornado官方教程以及网上的资料，如果有涉及到版权问题，请联系我。
