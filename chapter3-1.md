@@ -33,3 +33,5 @@ max_write_buffer_size – 最大的写buffer大小。
 异步读数据，知道socket关闭。
 
 ##### 6.BaseIOStream.close(exc_info=False)
+关闭当前的stream。
+
