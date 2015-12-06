@@ -36,6 +36,7 @@ def on_headers(data):
        parts = line.split(b":")
        if len(parts) == 2:
            headers[parts[0].strip()] = parts[1].strip()
+    #读数据，最后关闭stream，ioloop
     stream.read_bytes(int(headers[b"Content-Length"]), on_body)
 
 def on_body(data):
