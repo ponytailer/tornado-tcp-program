@@ -5,3 +5,5 @@
 
 它有一个方法
 ```connect(host, port, af=<AddressFamily.AF_UNSPEC: 0>, ssl_options=None, max_buffer_size=None)```
+
+它会返回IOStream的实例，如果ssl_options为真，那么会返回SSLIOStream。
