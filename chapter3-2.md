@@ -13,3 +13,4 @@
 有写也有读。
 
 ##### 5.BaseIOStream.get_fd_error()
+获取fd中所有error信息。
