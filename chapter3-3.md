@@ -45,4 +45,4 @@ server.add_sockets(sockets)
 IOLoop.current().start()```
 
 ##### 4.handle_stream(stream, address)
-这是我们用来接收stream的方法。你可以通过集成TCPServer，来覆盖这个方法。
+这是我们用来接收stream的方法。你可以通过继承TCPServer，来覆盖这个方法。
