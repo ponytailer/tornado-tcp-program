@@ -31,3 +31,5 @@ max_write_buffer_size – 最大的写buffer大小。
 
 ##### 5.BaseIOStream.read_until_close(callback=None, streaming_callback=None)
 异步读数据，知道socket关闭。
+
+##### 6.BaseIOStream.close(exc_info=False)
