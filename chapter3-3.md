@@ -36,6 +36,7 @@ IOLoop.current().start()
 
 
 ##### 3.add_sockets(sockets)
+也可以开启多进程。
 ```
 sockets = bind_sockets(8888)
 tornado.process.fork_processes(0)
