@@ -48,4 +48,4 @@ max_write_buffer_size – 最大的写buffer大小。
 有读就有写。
 
 
-以上呢就是baseIOStream中，主要的接口。
+以上呢就是baseIOStream中，主要的接口。在我们自己去写connection的时候，都会用的到，这里先简单介绍一下，在后面写connection的时候，我们会着重去讲解。
