@@ -36,8 +36,9 @@ class TcpServer(object):
 
         io_loop = ioloop.IOLoop.instance()
         for sock in socks:
+            #接受数据的handler
             callback = functools.partial(self._accept_handler, sock)
-            #为ioloop添加handler
+            #为ioloop添加handler，callback
             io_loop.add_handler(sock.fileno(), callback, WRITE_EVENT | READ_EVENT | ERROR_EVENT)
         #在ioloop开启后，添加一个回调函数
         ioloop.IOLoop.current().add_callback(self.startFactory)
@@ -59,3 +60,6 @@ class TcpServer(object):
         handle_receive = functools.partial(self.handle_stream, conn)
         conn.read_util_close(handle_receive)
     ```
+    
+    我们来看一下流程，
+    1.start().我们开启tcpserver，首先创建一个socket，, 然后我们Wieioloop添加
