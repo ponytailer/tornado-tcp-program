@@ -31,6 +31,7 @@ class TcpServer(object):
         pass
 
     def start(self, backlog=0):
+        #创建socket
         socks = build_listener(self._address, backlog=backlog)
 
         io_loop = ioloop.IOLoop.instance()
