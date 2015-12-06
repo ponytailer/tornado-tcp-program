@@ -48,3 +48,4 @@ max_write_buffer_size – 最大的写buffer大小。
 有读就有写。
 
 
+以上呢就是baseIOStream中，主要的接口。
