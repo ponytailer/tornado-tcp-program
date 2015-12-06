@@ -10,5 +10,6 @@ max_buffer_size – 最大的可接受数据大小，默认是100M。
 read_chunk_size – 读取的数据大小，默认64k。
 max_write_buffer_size – 最大的写buffer大小。  
 ```
-
 这些都可以在继承的时候修改的。
+
+介绍一下主要的几个接口
