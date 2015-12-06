@@ -25,6 +25,7 @@ import tornado.iostream
 import socket
 
 def send_request():
+    #向目标写数据
     stream.write(b"GET / HTTP/1.0\r\nHost: friendfeed.com\r\n\r\n")
     stream.read_until(b"\r\n\r\n", on_headers)
 
