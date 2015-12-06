@@ -16,3 +16,6 @@ max_write_buffer_size – 最大的写buffer大小。
 
 ##### 1.BaseIOStream.write(data, callback=None)
 异步的写数据，如果有callback，那么在所有数据成功写入以后执行callback。
+
+
+##### 2.BaseIOStream.read_bytes(num_bytes, callback=None, streaming_callback=None, partial=False)
