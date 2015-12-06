@@ -42,7 +42,9 @@ def on_body(data):
     tornado.ioloop.IOLoop.current().stop()
 
 if __name__ == '__main__':
+    #创建一个socket
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0)
+    #创建一个stream
     stream = tornado.iostream.IOStream(s)
     stream.connect(("friendfeed.com", 80), send_request)
     tornado.ioloop.IOLoop.current().start()
