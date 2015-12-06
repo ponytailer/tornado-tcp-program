@@ -48,5 +48,6 @@ if __name__ == '__main__':
     stream = tornado.iostream.IOStream(s)
     #连接目标，执行回调函数send_request
     stream.connect(("friendfeed.com", 80), send_request)
+    开启ioloop
     tornado.ioloop.IOLoop.current().start()
 ```
