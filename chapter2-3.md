@@ -2,4 +2,10 @@
 
 1.add_handler, update_handler, remove_handler三个和handelr有关的函数，通常是在写connection的时候用到的，刚开始学习的时候，不用太在意它的用法，在后面会详细说明。
 
-2.add_callback是比较常用的函数之一，不管在tornado还是其他的异步框架中，回调都是非常常见的。
+2.add_callback是比较常用的函数之一，不管在tornado还是其他的异步框架中，回调都是非常常见的。在服务器启动以后，会有一些相关的操作需要在ioloop启动后才能有效的去执行，那么这个时候，添加一个callback就是非常必要的了。以游戏服务器为例子(可能不贴切)，在游戏服务器启动后，会把全服的排行榜数据load到内存中，那么这个时候就可以使用add_callback了。
+```
+io_loop = ioloop.IOLoop.instance()
+io_loop.add_callback(load_rank_list)
+io_loop.start()
+```
+其中load_rank_list就是去将排行榜信息load到内存中的相关操作。
