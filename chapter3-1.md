@@ -13,3 +13,6 @@ max_write_buffer_size – 最大的写buffer大小。
 这些都可以在继承的时候修改的。
 
 介绍一下主要的几个接口
+
+##### 1.BaseIOStream.write(data, callback=None)
+异步的写数据，如果有callback，那么在写完以后执行callback
