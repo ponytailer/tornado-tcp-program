@@ -19,3 +19,5 @@ max_write_buffer_size – 最大的写buffer大小。
 
 
 ##### 2.BaseIOStream.read_bytes(num_bytes, callback=None, streaming_callback=None, partial=False)
+
+异步的读取数据，读到的数据大小取决于num_bytes。
