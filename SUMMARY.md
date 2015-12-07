@@ -11,3 +11,8 @@
     * [baseIOStream的相关函数以及IOStream类](chapter3-2.md)
     * [Tcp Client和Tcp Server](chapter3-3.md)
     * [一个简单的TCPServer](chapter3-4.md)
+
+* [what's the rpc?](chapter4.md)
+    * [ioloop的基本函数](chapter2-1.md)
+    * [ioloop的回调函数](chapter2-2.md)
+    * [ioloop相关函数说明](chapter2-3.md)
