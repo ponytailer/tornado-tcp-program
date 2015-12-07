@@ -17,3 +17,5 @@ def _handle_connect(self, sock):
 ```
 def sum(x, y):
     return x+y```
+    
+但是客户端来调用，我们如何知道server有这样一个函数呢？这就需要我们提前去处理一下，将希望可以被client调用的函数存起来。
