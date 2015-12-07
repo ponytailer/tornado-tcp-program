@@ -32,3 +32,9 @@ def route(**options):
     return decorator```
     
 比如我们可以写这样一个函数，作为装饰器，来将被装饰的函数存起来(HANDLERS), 这样在client调用sum的时候，我们就可以知道，server中是否存在sum这个函数。
+```
+@route()
+def sum(x, y):
+    return x+y```
+    
+这样函数被装饰起来以后，我们就可以找到这个函数了。
