@@ -37,4 +37,4 @@ def route(**options):
 def sum(x, y):
     return x+y```
     
-这样函数被装饰起来以后，我们就可以找到这个函数了。当我们知道存在sum这个函数的时候，我就可以从HANDLERS中讲sum取出来，```sum = HANDLERS.get('sum')```, 然后我们讲x，y两个参数传进去，算出结果，再将结果写回conn中，返回给client。
+这样函数被装饰起来以后，我们就可以找到这个函数了。当我们知道存在sum这个函数的时候，我就可以从HANDLERS中讲sum取出来，```sum = HANDLERS.get('sum')```, 然后我们讲x，y两个参数传进去，算出结果，再将结果写回conn中，返回给client。至此，客户端调用服务器函数的大致流程就说完了。
