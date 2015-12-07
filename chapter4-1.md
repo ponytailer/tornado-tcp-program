@@ -13,3 +13,7 @@ def _handle_connect(self, sock):
 ```
 
 ##### build_class之前我们说过，这是我们用来处理数据的protocol，那么rpc的逻辑流程应该都写在这里。现在假设client来调用一个函数sum(x, y)， 那么在我们server中就要有这样一个函数。
+
+```
+def sum(x, y):
+    return x+y```
