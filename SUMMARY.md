@@ -13,5 +13,5 @@
     * [一个简单的TCPServer](chapter3-4.md)
 
 * [what's the rpc?](chapter4.md)
-    * [rpc on my server](chapter4-1.md)
-    * [rpc on my client](chapter4-2.md)
+    * [RPC on my server](chapter4-1.md)
+    * [RPC on my client](chapter4-2.md)
