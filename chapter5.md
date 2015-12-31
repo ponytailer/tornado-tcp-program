@@ -1,1 +1,3 @@
 # 解读Tornado
+
+前几章主要是针对TCP编程中，tornado中常用的函数进行简单的解读。本章主要对tornado性能进行分析，来看一看我们到底为什么要在tornado的基础上进行tcp编程。
