@@ -28,7 +28,7 @@ While true：
 ```
 while true 
 	active_stream[] = epoll_wait(epollfd)
-	for i in active_stream[] 
+	for i in active_stream[]：
 		read or write till unavailable
 	
 ```
