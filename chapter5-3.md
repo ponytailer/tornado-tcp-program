@@ -8,3 +8,6 @@
 TCPServer 类的定义在 tcpserver.py。它有两种用法：bind+start 或者 listen。
 
 简言之，基于事件驱动的服务器（tornado）要干的事就是：创建 socket，绑定到端口并 listen，然后注册事件和对应的回调，在回调里accept 新请求。
+
+
+创建监听 socket 后为了异步，设置 socket 为非阻塞（这样由它 accept 派生的socket 也是非阻塞的），然后绑定并监听之。add_sockets 方法接收 socket 列表，对于列表中的 socket，用 fd 作键记录下来，并调用add_accept_handler 方法。它也是在 netutil 里定义的。
