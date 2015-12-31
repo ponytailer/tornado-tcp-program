@@ -11,3 +11,6 @@ TCPServer 类的定义在 tcpserver.py。它有两种用法：bind+start 或者 
 
 
 创建监听 socket 后为了异步，设置 socket 为非阻塞（这样由它 accept 派生的socket 也是非阻塞的），然后绑定并监听之。add_sockets 方法接收 socket 列表，对于列表中的 socket，用 fd 作键记录下来，并调用add_accept_handler 方法。它也是在 netutil 里定义的。
+
+
+add_accept_handler 方法的流程：首先是确保ioloop对象。然后调用 add_handler 向 loloop 对象注册在fd上的read事件和回调函数accept_handler。该回调函数是现成定义的，属于IOLoop层次的回调，每当事件发生时就会调用。回调内容也就是accept得到新socket和客户端地址，然后调用callback向上层传递事件。从上面的分析可知，当read事件发生时，accept_handler被调用，进而callback=_handle_connection被调用。
