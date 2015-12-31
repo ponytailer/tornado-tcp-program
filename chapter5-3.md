@@ -6,3 +6,5 @@
 对于 TCP 编程的总结就是：创建一个监听 socket，然后把它绑定到端口和地址上并开始监听，然后不停 accept。这也是 tornado 的 TCPServer 要做的工作。
 
 TCPServer 类的定义在 tcpserver.py。它有两种用法：bind+start 或者 listen。
+
+简言之，基于事件驱动的服务器（tornado）要干的事就是：创建 socket，绑定到端口并 listen，然后注册事件和对应的回调，在回调里accept 新请求。
