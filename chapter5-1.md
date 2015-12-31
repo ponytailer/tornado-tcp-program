@@ -25,9 +25,10 @@ While true：
 
 虽然我们不用白白的轮询，也知道了是否发生IO，，但却并不知道是那几个流（可能有一个，多个，甚至全部），我们只能无差别轮询所有流，找出能读出数据，或者写入数据的流，对他们进行操作。
 因此epoll就诞生了，epoll全称就是event poll，和咱们平常用的轮训不同，基于事件的epoll会把哪个数据流发生了怎样的事件告诉我们。
-while true {
+```
+while true 
 	active_stream[] = epoll_wait(epollfd)
-	for i in active_stream[] {
+	for i in active_stream[] 
 		read or write till unavailable
-	}
-}
+	
+```
