@@ -83,3 +83,6 @@ while True:
 
 ##### 咱们来看一下ioloop的start方法，start 方法中主要分三个部分：一个部分是对超时的相关处理；一部分是 epoll 事件通知阻塞、接收；一部分是对 epoll 返回I/O事件的处理。
 
+1.超时的处理，是用一个最小堆来维护每个回调函数的超时时间，如果超时，取出对应的回调，如果没有则重新设置poll_timeout的值
+
+2.通过 self._impl.poll(poll_timeout) 进行事件阻塞，当有事件通知或超时时 poll 返回特定的 event_pairs，这个上面也说过了。
