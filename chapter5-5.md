@@ -18,6 +18,7 @@ while True:
     if self._timeouts:
     	now = self.time()
     	while self._timeouts:
+    	    ＃超时回调
     		if self._timeouts[0].callback is None:
     			# the timeout was cancelled
     			heapq.heappop(self._timeouts)
