@@ -58,7 +58,7 @@ while True:
     	signal.setitimer(signal.ITIMER_REAL,
     					 self._blocking_signal_threshold, 0)
     
-    
+    ＃如果有事件发生，添加事件，
     self._events.update(event_pairs)
     while self._events:
     	fd, events = self._events.popitem()
