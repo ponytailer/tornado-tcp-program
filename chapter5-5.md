@@ -20,7 +20,7 @@ while True:
     	while self._timeouts:
     	    ＃超时回调
     		if self._timeouts[0].callback is None:
-    			# the timeout was cancelled
+    			# 最小堆维护超时事件
     			heapq.heappop(self._timeouts)
     		elif self._timeouts[0].deadline <= now:
     			timeout = heapq.heappop(self._timeouts)
@@ -82,3 +82,4 @@ while True:
 
 
 ##### 咱们来看一下ioloop的start方法，start 方法中主要分三个部分：一个部分是对超时的相关处理；一部分是 epoll 事件通知阻塞、接收；一部分是对 epoll 返回I/O事件的处理。
+
