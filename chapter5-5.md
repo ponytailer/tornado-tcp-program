@@ -75,4 +75,7 @@ while True:
     	except Exception:
     		app_log.error("Exception in I/O handler for fd %s",
     					  fd, exc_info=True)
+    					  
     					  ```
+    					  
+#####  简单来说一下流程，首先执行上次循环的回调列表，然后调用epoll等待事件的发生，根据fd取出对应的回调函数，然后执行。
