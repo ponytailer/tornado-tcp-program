@@ -47,11 +47,6 @@ while True:
         ＃这里的poll就是epoll，当有事件发生，就会返回，详情参照tornado里e＃poll的代码
     	event_pairs = self._impl.poll(poll_timeout)
     except Exception as e:
-    	# Depending on python version and IOLoop implementation,
-    	# different exception types may be thrown and there are
-    	# two ways EINTR might be signaled:
-    	# * e.errno == errno.EINTR
-    	# * e.args is like (errno.EINTR, 'Interrupted system call')
     	if (getattr(e, 'errno', None) == errno.EINTR or
     		(isinstance(getattr(e, 'args', None), tuple) and
     		 len(e.args) == 2 and e.args[0] == errno.EINTR)):
