@@ -63,6 +63,7 @@ while True:
     while self._events:
     	fd, events = self._events.popitem()
     	try:
+    	    ＃根据fd找到对应的回调函数，
     		self._handlers[fd](fd, events)
     	except (OSError, IOError) as e:
     		if e.args[0] == errno.EPIPE:
