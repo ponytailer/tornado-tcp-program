@@ -12,6 +12,7 @@ while True:
     	callbacks = self._callbacks
     	self._callbacks = []
     for callback in callbacks:
+        ＃执行遗留回调
     	self._run_callback(callback)
     
     if self._timeouts:
