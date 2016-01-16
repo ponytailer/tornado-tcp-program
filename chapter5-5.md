@@ -44,6 +44,7 @@ while True:
     	signal.setitimer(signal.ITIMER_REAL, 0, 0)
     
     try:
+        ＃这里的poll就是epoll，当有事件发生，就会返回，详情参照tornado里e＃poll的代码
     	event_pairs = self._impl.poll(poll_timeout)
     except Exception as e:
     	# Depending on python version and IOLoop implementation,
