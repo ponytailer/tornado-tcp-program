@@ -8,6 +8,7 @@ while True:
     # Prevent IO event starvation by delaying new callbacks
     # to the next iteration of the event loop.
     with self._callback_lock:
+        ＃上次循环的回调列表
     	callbacks = self._callbacks
     	self._callbacks = []
     for callback in callbacks:
