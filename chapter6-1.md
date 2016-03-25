@@ -8,7 +8,7 @@ def sig_handler(sig, frame):
 
 def shutdown():
     io_loop = ioloop.IOLoop.instance()
-    server.stopFactory()
+    server.stopFactory() ##自己去做一些处理，保证入库等。
 
     deadline = time.time() + 5
 
