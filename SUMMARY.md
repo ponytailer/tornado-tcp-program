@@ -28,4 +28,4 @@
     * [ioloop分析](chapter5-5.md)
     * [iostream一些小细节](chapter5-6.md)
 * [让我们实战吧](chapter6.md)
-    * [example_1](chapter6-1.md)
+    * [正确关闭服务器的姿势](chapter6-1.md)
