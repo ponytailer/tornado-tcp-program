@@ -4,7 +4,7 @@
 
 ```
 #1.mysql算是最常用的数据库之一了,不要钱,功能齐全,性能优良。这里主要使用tornado的一款api,
-tornado_mysql。
+#tornado_mysql。
 
 from tornado_mysql      import pools
 from tornado            import gen
@@ -43,14 +43,14 @@ def execute(sql, value=None, operator=SYNC):
 
 fetchone = functools.partial(execute, operator=ROW)
 fetchall = functools.partial(execute, operator=DATASET)
-对几种简单的数据库操作进行了简单的封装,便于开发中的使用。
+#对几种简单的数据库操作进行了简单的封装,便于开发中的使用。
 ```
 
 
 
 ```
 #2.redis算是比较常用的数据库之一，一般使用来做cache,也有做消息队列的。这里用的是
-tornadoredis这款api。
+#tornadoredis这款api。
 
 import tornadoredis
 from tornado import gen
