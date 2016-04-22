@@ -29,3 +29,4 @@
 * [让我们实战吧](chapter6.md)
     * [正确关闭服务器的姿势](chapter6-1.md)
     * [自动收集rpc函数](chapter6-2.md)
+    * [和数据库的那些事](chapter6-3.md)
