@@ -1,7 +1,7 @@
 
 ###跟多线程搞一些事情
 
-至今我仍然坚信，但线程仍然是最又效率的方式，比如nginx就是个很好的例子，在python中尤其。但是tornado依然提供了多线程方式来给开发者。这里给出一个例子，并做出简单的解释。
+至今我仍然坚信，单线程仍然是最有效率的方式，比如nginx就是个很好的例子，在python中尤其。但是tornado依然提供了多线程方式来给开发者。这里给出一个例子，并做出简单的解释。
 ```
 EXECUTOR = ThreadPoolExecutor(max_workers=4)＃最大线程数
 
@@ -29,4 +29,4 @@ class MainHandler(tornado.web.RequestHandler):
         return "ff"
         
 ```
-线程库用的是future里提供的，比较简单，没有安装的童鞋，可以用pip install futures 来进行安装.
+线程库用的是futures里提供的，比较简单，没有安装的童鞋，可以用pip install futures 来进行安装.
