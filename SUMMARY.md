@@ -32,3 +32,4 @@
     * [自动收集rpc函数](chapter6-2.md)
     * [和数据库的那些事](chapter6-3.md)
     * [跟多线程搞一些事情](chapter6-4.md)
+    * [tornado和celery很配呦](chapter6-5.md)
