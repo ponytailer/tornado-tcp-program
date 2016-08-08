@@ -30,3 +30,4 @@ class MainHandler(tornado.web.RequestHandler):
         
 ```
 线程库用的是futures里提供的，比较简单，没有安装的童鞋，可以用pip install futures 来进行安装.
+上面的例子用的是最简单的http请求，tcp中也是同样一个道理，只需要讲self.write和finish替换成自己写socket的函数就可以了。
