@@ -31,3 +31,5 @@ class MainHandler(tornado.web.RequestHandler):
 ```
 线程库用的是futures里提供的，比较简单，没有安装的童鞋，可以用pip install futures 来进行安装.
 上面的例子用的是最简单的http请求，tcp中也是同样一个道理，只需要讲self.write和finish替换成自己写socket的函数就可以了。
+
+另外由于GIL的限制，多线程并不能达到利用多核的目的，因此还是要使用传统的多进程来实现，或者也可以使用比较流行的协程提高效率。最理想的情况就是netty那样的模型，但是因为python线程的问题，因此可以将线程替换为stackless中的微进程，每一条连接分配一个stackless，这样也可以达到一个目的。现成的有人将stackless与twisted在一起使用，具体效果没有测试过。
