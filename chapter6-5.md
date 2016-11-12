@@ -29,4 +29,5 @@ celery -A my.utils.async_task worker -P gevent -c 2 -l info -n 'my.worker.%%h.%(
 v = mytask.apply_async(111, countdown=1)
 他的返回值是他的任务id，通过任务id，我们可以取消任务,countdown代表多少秒以后执行
 
-revoke函数就是取消任务的，revoke(task_id)```
+revoke函数就是取消任务的，revoke(task_id)
+```
