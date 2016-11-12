@@ -5,7 +5,8 @@ Celery 是一个简单、灵活且可靠的，处理大量消息的分布式系�
 
 在tornado中如果想使用celery，首先要安装celery的python api。使用pip install celery就可以了，非常方便。
 
-```from celery import Celery, task
+```
+from celery import Celery, task
 
 c = Celery()
 
